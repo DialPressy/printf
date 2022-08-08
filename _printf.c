@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 			pfunc = get_print(*p);
 			count += (pfunc)
 				? pfunc(arguments, &flags)
-				: _printf("%%%c", *p);
+				 _printf("%%%c", *p);
 		} else
 			count += _putchar(*p);
 	}
