@@ -92,4 +92,4 @@ All the above options work well together.
 
 Authors
 Precious Diala - dialpressy@gmail.com
-Bobo Tonweriyai - bmtonweriyai@gmail.com
+Bodiseowei Tonweriyai - bmtonweriyai@gmail.com
