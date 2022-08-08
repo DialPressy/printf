@@ -95,6 +95,5 @@ R : prints the rot13'ed string
 All the above options work well together.
 
 #Authors
-Precious Diala - dialpressy@gmail.com
-
-Bodiseowei Tonweriyai - bmtonweriyai@gmail.com
+#Precious Diala - dialpressy@gmail.com
+#Bodiseowei Tonweriyai - bmtonweriyai@gmail.com
