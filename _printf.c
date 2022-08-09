@@ -4,6 +4,7 @@
  * @format: const char pointer
  * Return: b_len
  */
+
 int _printf(const char *format, ...)
 {
 	int (*pfunc)(va_list, flags_t *);
