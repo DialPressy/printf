@@ -1,7 +1,6 @@
 #include "main.h"
 
 /************** PRINT CHAR **********************/
-
 /**
 * print_char - Prints a char
 * @types: List a of arguments
@@ -12,8 +11,7 @@
 * @size: Size specifier
 * Return: Number of chars printed.
 */
-int print_char(va_list types, char buffer[],
-	int flags, int width, int precision, int size)
+int print_char(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 	char c = va_arg(types, int);
 
@@ -30,11 +28,10 @@ int print_char(va_list types, char buffer[],
 * @size: Size specifier
 * Return: Number of chars printed
 */
-int print_string(va_list types, char buffer[],
-	int flags, int width, int precision, int size)
+int print_string(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 	int length = 0, i;
-	char *str = va_arg(types,char *);
+	char *str = va_arg(types, char *);
 
 	UNUSED(buffer);
 	UNUSED(flags);
@@ -43,13 +40,13 @@ int print_string(va_list types, char buffer[],
 	UNUSED(size);
 	if (str == NULL)
 	{
-		str = "(null";
+		str = "(null)";
 		if (precision >= 6)
 			str = "      ";
 	}
 
 	while (str[length] != '\0')
-		length++;
+		length++ ;
 
 	if (precision >= 0 && precision < length)
 		length = precision;
@@ -121,7 +118,7 @@ int print_int(va_list types, char buffer[],
 	if (n == 0)
 		buffer[i--] = '0';
 
-	buffer[BUFF_SIZE -1] = '\0';
+	buffer[BUFF_SIZE - 1] = '\0';
 	num = (unsigned long int)n;
 
 	if (n < 0)
@@ -168,7 +165,7 @@ int print_binary(va_list types, char buffer[],
 	n = va_arg(types, unsigned int);
 	m = 2147483648; /* (2 ^ 31) */
 	a[0] = n / m;
-	for (i = 1; i < 32; i++)
+	for (i = 1; i < 32; i++) 
 	{
 		m /= 2;
 		a[i] = (n / m) % 2;
