@@ -30,7 +30,7 @@ typedef struct printHandler
 	int (*f)(va_list ap, flags_t *f);
 } ph;
 
-/* print_nums */
+/* print_i */
 int print_int(va_list l, flags_t *f);
 void print_number(int n);
 int print_unsigned(va_list l, flags_t *f);
@@ -58,11 +58,11 @@ int get_flag(char s, flags_t *f);
 int print_string(va_list l, flags_t *f);
 int print_char(va_list l, flags_t *f);
 
-/* write_funcs */
+/* _write_char */
 int _putchar(char c);
 int _puts(char *str);
 
-/* print_custom */
+/* print_r */
 int print_rot13(va_list l, flags_t *f);
 int print_rev(va_list l, flags_t *f);
 int print_bigS(va_list l, flags_t *f);
