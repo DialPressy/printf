@@ -62,7 +62,7 @@ int print_rev(va_list l, flags_t *f)
 }
 
 /**
- * print_rot13 - prints a string using rot13
+ * print_rot13 - the function prints a string using rot13
  * @l: list of arguments from _printf
  * @f: pointer to the struct flags that determines
  * if a flag is passed to _printf
